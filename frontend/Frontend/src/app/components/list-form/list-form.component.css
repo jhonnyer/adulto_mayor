@@ -1,0 +1,88 @@
+.w3-button {
+    /* display: table; */
+    border-width: thin;
+    /* border: none; */
+    background-color: rgb(216, 109, 109);
+    /* padding: 15px 71px; */
+    /* padding-right: 7px; */
+
+}
+
+.Table
+
+        {
+
+            display: table;
+            border-width: thin;
+
+            padding-left: 5px;
+
+            padding-right: 7px;
+
+            border: 1px solid #000;
+            vertical-align: middle;
+
+        }
+
+        .Title
+
+        {
+
+            display: table-caption;
+
+            text-align: center;
+
+            font-weight: bold;
+
+            font-size: larger;
+
+        }
+
+        .Heading
+
+        {
+
+            display: table-row;
+
+            font-weight: bold;
+
+            text-align: center;
+
+        }
+
+        .Row
+
+        {
+
+            display: table-row;
+            border-width: thin;
+
+            padding-left: 5px;
+
+            padding-right: 7px;
+
+            border: 1px solid #000;
+            vertical-align: middle;
+
+        }
+
+        .Cell
+
+        {
+
+            display: table-cell;
+
+            /* border: solid; */
+
+            border-width: thin;
+
+            padding-left: 5px;
+
+            padding-right: 7px;
+
+            border: 1px solid #000;
+            vertical-align: middle;
+            /* padding: 10px; */
+
+        }
+

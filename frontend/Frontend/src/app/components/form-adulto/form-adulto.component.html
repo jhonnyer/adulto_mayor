@@ -1,0 +1,71 @@
+<div class="col-md-4 offset-md-2">
+    <div class="card">
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <p>Nombres Completos:</p>
+                    <input type="text" name="nombre" [(ngModel)]="formAdulto.nombre" class="form-control" placeholder="Nombres" autofocus>
+                </div>
+                <div class="form-group">
+                    <p>Apellidos Completos:</p>
+                    <input type="text" name="apellidos" [(ngModel)]="formAdulto.apellidos" class="form-control" placeholder="Apellidos" autofocus>
+                </div>
+                <div class="form-group">
+                    <p>Cedula del Cliente:</p>
+                    <input type="text" name="cedula" [(ngModel)]="formAdulto.cedula" class="form-control" autofocus>
+                </div>
+                <!-- <div class="form-group">
+                    <input type="date" name="fecha_nacimiento" [(ngModel)]="formAdulto.fecha_nacimiento" class="form-control" placeholder="Fecha Nacimiento" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="date" name="Fecha_expedicion" [(ngModel)]="formAdulto.Fecha_expedicion" class="form-control" placeholder="Fecha Expedición" autofocus>
+                </div> -->
+                <div class="form-group">
+                    <b>Motivo:</b>
+                    <input type="text" name="Motivo" [(ngModel)]="formAdulto.Motivo" class="form-control" placeholder="Motivo" autofocus>
+                </div>
+                <div class="form-group">
+                    <b>Celular:</b>
+                    <input type="text" name="celular" [(ngModel)]="formAdulto.celular" class="form-control" placeholder="Celular" autofocus>
+                </div>           
+                <div class="form-group">
+                    <b>Nombre Cajera:</b>
+                    <input type="text" name="nom_cajera" [(ngModel)]="formAdulto.nom_cajera" class="form-control" placeholder="Nombre Cajera" autofocus>
+                </div>    
+                <div class="form-group">
+                    <b>Punto de Venta:</b>
+                    <input type="text" name="punto_venta" [(ngModel)]="formAdulto.punto_venta" class="form-control" placeholder="Punto de Venta" autofocus>
+                </div>    
+                <div class="form-group">
+                    <b>Cedula cajera:</b>
+                    <input type="text" name="ced_cajera" [(ngModel)]="formAdulto.ced_cajera" class="form-control" placeholder="Cedula_cajera" autofocus>
+                </div>    
+                <div class="form-group">
+                    <b>foto id:</b>
+                    <input type="text" name="id_foto1" [(ngModel)]="formAdulto.id_foto1" class="form-control" placeholder="Foto 1" autofocus>
+                </div>     
+                <!-- <div class="form-group" type="POST" enctype="multipart/formdata">
+                    <b>Foto cédula de frente:</b>
+                        <input type="file" name="foto_ced_adverso" [(ngModel)]="formAdulto.foto_ced_adverso"  class="form-control" placeholder="Foto cedula de atras"/>
+                        <input type="submit" name="subir-imagen" value="Enviar imagen" />
+                </div> 
+                <div class="form-group" type="POST" enctype="multipart/formdata">
+                    <b>Foto cédula posterior:</b>
+                        <input type="file" name="foto_ced_inverso" [(ngModel)]="formAdulto.foto_ced_inverso"  class="form-control" placeholder="Foto cedula de frente"/>
+                        <input type="submit" name="subir-imagen" value="Enviar imagen" />
+                </div>
+                <div class="form-group" type="POST" enctype="multipart/formdata">
+                    <b>Foto cliente en ventanilla:</b>
+                        <input type="file" name="foto_cliente" [(ngModel)]="formAdulto.foto_cliente"  class="form-control" placeholder="Foto cedula de frente"/>
+                        <input type="submit" name="subir-imagen" value="Enviar imagen" />
+                </div> -->
+                <!-- Si edit es true se va a actualizar el juego, si es falso se va a guardar un nuevo juego, llama funcion saveNewGame   -->
+                <!-- <button class="btn btn-success btn-block" (click)="edit ? updateGame(): saveNewGame()">Guardar</button> -->
+                <button class="btn btn-success btn-block" (click)="saveNewArticulo()">Guardar</button>
+
+            </form>
+        </div> 
+    </div>
+</div>
+
+

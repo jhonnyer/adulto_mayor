@@ -1,0 +1,77 @@
+<!-- game almacena cada juego obtenido de games  -->
+<div class="col-md-4">
+    <div class="Row">
+        <div class="Title">Formulario Adulto Mayor</div>
+            <div class="Heading bg-dark text-white justify-content-between align-items-center">
+                <div class="Cell">
+                    <p>Nombre</p>
+                </div>
+                <div class="Cell">
+                    <p>Apellidos</p>
+                </div>
+                <div class="Cell">
+                    <p>Cedula</p>
+                </div>
+                <div class="Cell">
+                    <p>Motivo</p>
+                </div>
+                <div class="Cell">
+                    <p>Celular</p>
+                </div>
+                <div class="Cell">
+                    <p>Nombre Cajera</p>
+                </div>
+                <div class="Cell">
+                    <p>Punto de Venta</p>
+                </div>
+                <div class="Cell">
+                    <p>Cedula Cajera</p>
+                </div>
+                <div class="Cell">
+                    <p>Foto cedula frente</p>
+                </div>
+            </div> 
+            <div class="Row" *ngFor="let formAdultos of formAdulto; let i=index">
+                    <!-- <div class="Cell">
+                    <img [src]="articulo.imagen" class="card-img-top" alt="">
+                </div> -->
+                <div class="Cell">
+                    <p>{{i}}.  {{formAdultos.nombre}}</p>
+                </div>
+                <div class="Cell">
+                    <p>{{formAdultos.apellidos}}</p>
+                </div>
+                <div class="Cell">
+                    <p>{{formAdultos.cedula}}</p>
+                </div> 
+                <div class="Cell">
+                    <p>{{formAdultos.Motivo}}</p>
+                </div> 
+                <div class="Cell">
+                    <p>{{formAdultos.celular}}</p>
+                </div> 
+                <div class="Cell">
+                    <p>{{formAdultos.nom_cajera}}</p>
+                </div>
+                <div class="Cell">
+                    <p>{{formAdultos.punto_venta}}</p>
+                </div>
+                <div class="Cell">
+                    <p>{{formAdultos.ced_cajera}}</p>
+                </div>
+                <div class="Cell"> 
+                    <!-- <img src="assets/perfil1.jpg" class="card-img-top" alt=""> -->
+                    <a src="assets/{{formAdultos.foto_ced_adverso}}" download><img src="assets/{{formAdultos.foto_ced_adverso}}" class="card-img-top" alt=""></a>
+                </div>
+                <!-- <div class="Cell" style="background-color:  rgb(145, 58, 58);">
+                    <button class="cell btn btn-danger" (click)="deleteArticulo(articulo.id_articulo)">
+                        <i class="far fa-trash-alt"></i>
+                    </button>
+                </div> -->
+                <!-- <div class="Cell" style="background-color: rgb(109, 153, 173);">
+                    <a [routerLink]="['/articulos/edit/',articulo.id_articulo]" class="fas fa-edit">Editar</a>
+                </div> -->
+            </div>        
+    </div>
+</div>
+
